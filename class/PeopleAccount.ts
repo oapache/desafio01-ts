@@ -1,10 +1,12 @@
-import { DioAccount } from "./DioAccount"
+import { DioAccount } from "./DioAccount.js";
 
-export class PeopleAccount extends DioAccount {
-  doc_id: number
+  export class PeopleAccount extends DioAccount {
+    doc_id: number;
 
-  constructor(doc_id: number, name: string, accountNumber: number){
-    super(name, accountNumber)
-    this.doc_id = doc_id
+    constructor (doc_id: number,  name: string, accountNumber: number){
+      super(name,accountNumber)
+      this.doc_id = doc_id
+
+    }
+
   }
-}
